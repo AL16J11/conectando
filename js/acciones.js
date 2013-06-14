@@ -6,7 +6,7 @@
 	   
 	   $.ajax({
 		   type:"POST",
-		   url:"198.168.1.182/sitio6/Log_in_m.php",
+		   url:"http://198.168.1.182/sitio6/Log_in_m.php",
 		   data: datos
 		   }).done(function(msg){
 			   alert(msg);

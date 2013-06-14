@@ -1,5 +1,5 @@
 // JavaScript Document
-
+var ID_Usuario="";
  function LoginConectar(U,P)
    {
 	   datos="usuario="+U+"&password="+P;
@@ -16,7 +16,11 @@
 			   }//if
 				   else
 				   {
-					   alert("Bienvenido");
+					   var OUsiario = jQuery.parseJSON(msg);
+					   ID_Usuario= OUsuario.Usuario;
+					   
+					   alert("Bienvenido"+ID_Usuario);
+					   location.href="#Busqueda";
 				   }//else
 });
    }
